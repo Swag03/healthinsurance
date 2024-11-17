@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Insurance Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Healthcare Insurance Form</h1>
+        <form id="insuranceForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="insuranceType">Choose Your Insurance Plan:</label>
+            <select id="insuranceType" name="insuranceType" required>
+                <option value="" disabled selected>Select a plan</option>
+                <option value="basic">Basic Plan</option>
+                <option value="premium">Premium Plan</option>
+                <option value="family">Family Plan</option>
+                <option value="senior">Senior Citizen Plan</option>
+            </select>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" placeholder="Enter your full address" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formMessage"></p>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
